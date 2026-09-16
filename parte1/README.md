@@ -41,34 +41,84 @@ Y comprobamos la versión, yo en mi caso lo he hecho mediante el comando:
 
 Terminamos realizando los 3 ejercicios simples indicados en la tarea.
 
-|[](images/Scala_y_Tarea_5.png) REVISAR
+|[](images/Scala_y_Tarea_5.png)
 
 ## Entorno 2
 
 Para instalar java 17 yo lo haré llendo a https://adoptium.net/es/temurin/releases?version=17 desde el que instalaré el OpenJDK17U-jdk_x64_windows_hotspot_17.0.20.1_1.msi
 Ejecutamos el instalador y como lo vamos a usar para varias tareas, yo lo voy a poner como JDK predeterminado.
+
+|[](images/Instalacion_JDK17_1.png)
+|[](images/Instalacion_JDK17_2.png)
+|[](images/Instalacion_JDK17_3.png)
+
 Comprobamos desde la terminal que el Java 17 se haya instalado bien con where java, java -version y javac -version.
+
+|[](images/Comprobar_Java.png)
 
 Yo el Visual Studio Code ya lo tenía instalado de antes, unicamente tengo que actualizarlo a la última versión la 1.138
 
+|[](images/VisualStudio_Iniciado.png)
+|[](images/Version_VisualStudio.png)
+
 Vamos al apartado de extensiones a la derecha de la pantalla y buscamo Scala (Metals) para instalarla.
+
+|[](images/Instalacion_Scala_Metals.png)
 
 Para instalar sbt hay que entrar a la terminal y escribir winget install sbt.sbt, y una vez ha sido instalado podemos comprobar que se ha instalado correctamente con sbt --version.
 
+|[](images/Instalacion_sbt.png)
+|[](images/sbt_version.png)
+
 Ahora, tenemos que crear una carpeta que abriremos desde el visual studio code para realizar nuestro proyecto y tendremos que crear las distinas carpetas y archivos para llegar a la siguiente estructura.
+
+|[](images/Estructura_Proyecto_Scala_sbt.png)
+
 Dentro del built.sbt especificamos que usaremos la versión "2.12.21" y que el nombre será "scala-vscode". 
+
+|[](images/build_sbt.png)
+
 Dentro de Main.scala pegamos el contenido del mini programa de ejemplo
+
+|[](images/Main_scala.png)
+
 Mientras creabas la estructura del proyecto, metals avisaba de si querías importa el proyecto, ahora es el momento de indicarle que quieres hacerlo aceptando la notificación en la esquina inferior derecha.
+
+|[](images/import_metals_notification.png)
+
 Mientras Metals se importa, se van a ir añadiendo muchas carpetas y archivos en distintos niveles del proyecto, las primeras capas se verán algo así
+
+|[](images/Estructura_Carpetas_Metals_Importado.png)
+
 Una vez compliado completamente vamos a abrir una terminal y nos vamos a mover a la localización del proyecto, una vez estemos dentro de la carpeta base, vamos a compilarlo con "sbt compile" y una vez se compile correctamente probaremos a ejecutarlo desde la misma localizacion con sbt run
+
+|[](images/sbt_compile_y_sbt_run.png)
 
 ## Entorno 3
 
 Para iniciar este ejercicio, la practica pide instalar el Intellij IDEA, pero yo ya lo tenía instalado de antes, por lo que no puedo mostrar la instalación.
 Para instalar el plugin de Scala, entramos en las pestaña de nuevo proyecto y damos en manejar más los plugins de los generadores, donde está Scala. Desde ahí entramos e instalamos el plugin. 
+
+|[](images/Encontrar_Instalador_plugin_Scala.png)
+|[](images/Plugin_Scala_intellij.png)
+
 Volvemos al apartado de crear proyecto, seleccionamos Scala como Generator y cambiamos el JDK en el desplegable en el centro del menu.
+
+|[](images/Intellij_usa_JDK17.png)
+
 Le cambiamos el nombre del proyecto a scala-intellij y cambiamos la versión de Scala a la 2.12.21 y creamos el proyecto.
 
+|[](images/scala_intellij_nombre_versionScala.png)
+
 Una vez creado el proyecto podemos ver que el build contiene todo lo que requiere la tarea, creamos el archivo en la ruta indicada.
+
+|[](images/contenido_buildsbt_intellij.png)
+
 Una vez en el archivo, nos pedirán que volvamos a configurar el SDK para Scala, elegimos el 2.12.21
+
+|[](images/Main_Scala_Intellij_SDK_Correcto.png)
+
 Copiamos el contenido del ejercicio y ejecutamos desde el Intellij, una vez vemos que no ha habido errores, abrimos el proyecto desde un cmd, y al igual que en el ejercicio del entorno anterior compilamos y ejecutamos con sbt.
+
+|[](images/Codigo_Intellij_Scala_Ejecutado.png)
+|[](images/sbt_compile_y_sbt_run_Intellij.png)
