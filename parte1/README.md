@@ -1,16 +1,18 @@
 ## Entorno 1
 
 Para instalar Jupyter podermos encontrar información en la web: https://jupyter.org/install
-Como esta indica ejecutamos el comando "pip install jupyterlab" en nuestro cmd, que comprobará si tenemos todo lo requerido para jupiter y los instalará si no los tenemos. (images/Instalacion_1_JupyterLab.png)
+Como esta indica ejecutamos el comando "pip install jupyterlab" en nuestro cmd, que comprobará si tenemos todo lo requerido para jupiter y los instalará si no los tenemos. ![](images/Instalacion_1_JupyterLab.png) ![](images/Instalacion_2_JupyterLab.png) ![](images/Instalacion_3_JupyterLab.png)
 
-Una vez instalado jupyter, hay que usar el comando "jupyter lab" en nuestro cmd, el cual abrirá http://localhost:8888/lab en nuestro navegador, desde donde podremos trabajar con jupyter
+Una vez instalado jupyter, hay que usar el comando "jupyter lab" en nuestro cmd ![](images/Ejecucion_Comando_Jupyter_lab.png), el cual abrirá http://localhost:8888/lab en nuestro navegador, desde donde podremos trabajar con jupyter ![](images/jupyter_en_localhost8888lab.png)
 Para instalar almond, entraremos en https://almond.sh/ y haremos click en la opción de install, eso nos llevará a https://almond.sh/docs/quick-start-install.
-Te indica que debes tener instalado Java 1.8.0_121, yo ya lo tengo instalado pero en caso de no tenerlo, te proveé del enlace para descargarlo.
+Te indica que debes tener instalado mínimo Java 1.8.0_121, yo ya lo tengo instalado pero en caso de no tenerlo, te proveé del enlace para descargarlo.
 Antes de instalar almond debes de instalar coursier, en la página web indica que hay que usar los comandos:
 
 - bitsadmin /transfer downloadCoursierCli https://git.io/coursier-cli "%cd%\coursier"
 - bitsadmin /transfer downloadCoursierBat https://git.io/coursier-bat "%cd%\coursier.bat"
-
+- 
+  ![](images/Version_Java_Correcta_Y_Comandos_Almond_Incorrectos.png)
+  
 A mi no me han funcionado, y con ayuda de la IA, se que es por que no son comandos actualizados, en su lugar yo usaré:
 
 - curl -fLo cs-x86_64-pc-win32.zip https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-win32.zip
@@ -18,17 +20,28 @@ A mi no me han funcionado, y con ayuda de la IA, se que es por que no son comand
 Extraigo el zip en la carpeta donde lo he descargado.
 Aunque no sea obligatorio por consejo de la IA, voy a renombrar lo extraido (cs-x86_64-pc-win32.exe) a cs.exe para mayor comodidad a la hora de ejecutar comandos con:
 move cs-x86_64-pc-win32.exe cs.exe
+|[](images/Coursier_Instalado_Y_Editado.png)
 Ahora que ya tengo correctamente instalado coursier, puedo instalar almond con
 
 - .\cs launch --use-bootstrap almond -M almond.ScalaKernel --scala 2.12.21 -- --install
 
+  |[](images/Instalacion_Almond_Correcto.png)
+  |[](images/Instalacion_Almond_Correcto_Final.png)
+
 Es importante que despues de "almond.ScalaKernel", separado con un espacio se escriba si se quiere una versión especifica de scala como es nuestro caso, si no se instalará la ultima versión (3.8.1)
 Una vez instalado almond, podemos comprobar que scala este descargado correctamente para ello volvemos a abrir jupyter lab.
-En Jupyter lab, abrimos un cuaderno Scala y comprobamos la versión, yo en mi caso lo he hecho mediante el comando:
+En Jupyter lab, abrimos un cuaderno Scala.
+
+|[](images/New_Notebook.png)
+|[](images/Elegir_Kernel_Scala.png)
+
+Y comprobamos la versión, yo en mi caso lo he hecho mediante el comando:
 
 - println("Scala " + scala.util.Properties.versionNumberString)
 
 Terminamos realizando los 3 ejercicios simples indicados en la tarea.
+
+|[](images/Scala_y_Tarea_5.png) REVISAR
 
 ## Entorno 2
 
