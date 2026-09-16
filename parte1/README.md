@@ -40,3 +40,10 @@ Yo el Visual Studio Code ya lo tenía instalado de antes, unicamente tengo que a
 Vamos al apartado de extensiones a la derecha de la pantalla y buscamo Scala (Metals) para instalarla.
 
 Para instalar sbt hay que entrar a la terminal y escribir winget install sbt.sbt, y una vez ha sido instalado podemos comprobar que se ha instalado correctamente con sbt --version.
+
+Ahora, tenemos que crear una carpeta que abriremos desde el visual studio code para realizar nuestro proyecto y tendremos que crear las distinas carpetas y archivos para llegar a la siguiente estructura.
+Dentro del built.sbt especificamos que usaremos la versión "2.12.21" y que el nombre será "scala-vscode". 
+Dentro de Main.scala pegamos el contenido del mini programa de ejemplo
+Mientras creabas la estructura del proyecto, metals avisaba de si querías importa el proyecto, ahora es el momento de indicarle que quieres hacerlo aceptando la notificación en la esquina inferior derecha.
+Mientras Metals se importa, se van a ir añadiendo muchas carpetas y archivos en distintos niveles del proyecto, las primeras capas se verán algo así
+Una vez compliado completamente vamos a abrir una terminal y nos vamos a mover a la localización del proyecto, una vez estemos dentro de la carpeta base, vamos a compilarlo con "sbt compile" y una vez se compile correctamente probaremos a ejecutarlo desde la misma localizacion con sbt run
