@@ -1,7 +1,8 @@
 ## Entorno 1
 
 Para instalar Jupyter podermos encontrar información en la web: https://jupyter.org/install
-Como esta indica ejecutamos el comando "pip install jupyterlab" en nuestro cmd, que comprobará si tenemos todo lo requerido para jupiter y los instalará si no los tenemos.
+Como esta indica ejecutamos el comando "pip install jupyterlab" en nuestro cmd, que comprobará si tenemos todo lo requerido para jupiter y los instalará si no los tenemos. <img width="1753" height="1031" alt="Instalacion_1_JupyterLab" src="https://github.com/user-attachments/assets/8581550c-de3b-49bb-bf45-061b094dd04e" />)
+
 Una vez instalado jupyter, hay que usar el comando "jupyter lab" en nuestro cmd, el cual abrirá http://localhost:8888/lab en nuestro navegador, desde donde podremos trabajar con jupyter
 Para instalar almond, entraremos en https://almond.sh/ y haremos click en la opción de install, eso nos llevará a https://almond.sh/docs/quick-start-install.
 Te indica que debes tener instalado Java 1.8.0_121, yo ya lo tengo instalado pero en caso de no tenerlo, te proveé del enlace para descargarlo.
