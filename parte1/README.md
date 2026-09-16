@@ -47,3 +47,14 @@ Dentro de Main.scala pegamos el contenido del mini programa de ejemplo
 Mientras creabas la estructura del proyecto, metals avisaba de si querías importa el proyecto, ahora es el momento de indicarle que quieres hacerlo aceptando la notificación en la esquina inferior derecha.
 Mientras Metals se importa, se van a ir añadiendo muchas carpetas y archivos en distintos niveles del proyecto, las primeras capas se verán algo así
 Una vez compliado completamente vamos a abrir una terminal y nos vamos a mover a la localización del proyecto, una vez estemos dentro de la carpeta base, vamos a compilarlo con "sbt compile" y una vez se compile correctamente probaremos a ejecutarlo desde la misma localizacion con sbt run
+
+## Entorno 3
+
+Para iniciar este ejercicio, la practica pide instalar el Intellij IDEA, pero yo ya lo tenía instalado de antes, por lo que no puedo mostrar la instalación.
+Para instalar el plugin de Scala, entramos en las pestaña de nuevo proyecto y damos en manejar más los plugins de los generadores, donde está Scala. Desde ahí entramos e instalamos el plugin. 
+Volvemos al apartado de crear proyecto, seleccionamos Scala como Generator y cambiamos el JDK en el desplegable en el centro del menu.
+Le cambiamos el nombre del proyecto a scala-intellij y cambiamos la versión de Scala a la 2.12.21 y creamos el proyecto.
+
+Una vez creado el proyecto podemos ver que el build contiene todo lo que requiere la tarea, creamos el archivo en la ruta indicada.
+Una vez en el archivo, nos pedirán que volvamos a configurar el SDK para Scala, elegimos el 2.12.21
+Copiamos el contenido del ejercicio y ejecutamos desde el Intellij, una vez vemos que no ha habido errores, abrimos el proyecto desde un cmd, y al igual que en el ejercicio del entorno anterior compilamos y ejecutamos con sbt.
