@@ -2,11 +2,11 @@
 
 ## Entorno
 
--Visual Studio Code
--Metals
--Scala 2.12.21
--JDK 17
--sbt
+- Visual Studio Code
+- Metals
+- Scala 2.12.21
+- JDK 17
+- sbt
 
 ## Descripción 
 
@@ -36,5 +36,3 @@ válidas y las que hacen but, y compara la mejor puntuación de cada ronda.
 sbt compile
 sbt run
 ```
-
-El programa utiliza Scala `2.12.21`, configurado en [build.sbt](./build.sbt).
